@@ -1,0 +1,329 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: EMS VN8900
+VAL_TABLE_ CF_Clu_BuzzerSet 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Invalid" 2 "Enable" 1 "Disable" 0 "Off" ;
+VAL_TABLE_ CF_Clu_DrLkCurReq 3 "Invalid" 2 "Not used" 1 "Real value Request" 0 "Off" ;
+VAL_TABLE_ CF_TCU_WarnSnd 1 "Description for the value '0x1'" 0 "No Warning Sound" ;
+VAL_TABLE_ CF_TCU_WarnImg 1 "Warning Image" 0 "No Warning Image" ;
+VAL_TABLE_ CF_TCU_WarnMsg 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Warning Message 4" 3 "Warning Message 3" 2 "Warning Message 2" 1 "Warning Message 1" 0 "No Warning Message" ;
+VAL_TABLE_ CF_Gway_HeadLampHighSW 1 "Head Lamp High SW on" 0 "Head Lamp High SW off" ;
+VAL_TABLE_ CF_Gway_LightSWStatus 3 "Auto Light Switch On" 2 "Head Lamp Low Switch On" 1 "Tail Switch On" 0 "Light Switch off" ;
+VAL_TABLE_ LKAS1_HBA_Sys_Stat 7 "System Fail" 6 "RESERVED" 5 "RESERVED" 4 "RESERVED" 3 "RESERVED" 2 "HBA On & High Beam On" 1 "HBA On & High Beam Off" 0 "Default(HBA off)" ;
+VAL_TABLE_ LKAS1_HBA_Lamp_Status 1 "HBA Indicator Lamp On" 0 "HBA Indicator Lamp Off" ;
+VAL_TABLE_ CF_Mdps_SErr 1 "VSM1 signal is error" 0 "VSM1 signal is not error" ;
+VAL_TABLE_ CF_Mdps_Def 1 "MDPS is defective" 0 "MDPS is not defective" ;
+VAL_TABLE_ CF_Esc_Def 1 "VSM is defective" 0 "VSM is not defective" ;
+VAL_TABLE_ CF_Esc_CtrMode 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Mode3-Particular control" 2 "Mode2-output Tq overlay mode" 1 "Mode1-sns value overlay mode" 0 "Inactive" ;
+VAL_TABLE_ CF_Esc_Act 1 "VSM control active" 0 "VSM control inactive" ;
+VAL_TABLE_ CF_Spas_VolDown 3 "Not supported" 2 "Reserved" 1 "ON" 0 "OFF" ;
+VAL_TABLE_ CF_Spas_StatAlarm 1 "SPAS&PAS Function Alarm ON" 0 "SPAS&PAS Function Alarm OFF" ;
+VAL_TABLE_ CF_Spas_BEEP_Alarm 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "System abort Msg" 8 "Scan complete Msg" 7 "Stop Msg " 6 "Reserved" 5 "Reserved" 4 "SPAS park complete warning alarm" 3 "Change to TGS R warning alarm" 2 "Reserved" 1 "SPAS/PAS Fail State warn alarm" 0 "No warning alarm" ;
+VAL_TABLE_ CF_Spas_XX_Alarm 3 "3rd warning alarm level" 2 "2nd warning alarm level" 1 "1st warning alarm level" 0 "OFF" ;
+VAL_TABLE_ CF_Spas_XXX_Ind 7 "Malfunction" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "3rd warning level" 2 "2nd warning level" 1 "1st warning level" 0 "OFF" ;
+VAL_TABLE_ CF_Spas_Disp 3 "SPAS display" 2 "SPAS display" 1 "PAS display" 0 "No display" ;
+VAL_TABLE_ CF_Spas_HMI_Stat 32 "Over speed of vehicle" 31 "System failed" 30 "System auto-canceled" 29 "Reserved" 28 "Finish auto steering activation" 27 "Reserved" 26 "Req Gear Shift B" 25 "Req Gear Shift F" 24 "Reserved" 23 "Automatic steering activation" 22 "Reserved" 21 "Reserved" 20 "FinishParkSpace-Lh parallel" 19 "FinishParkSpace-Rh parallel" 18 "FinishParkSpace-Lh perpendicular" 17 "FinishParkSpace-Rh perpendicular" 16 "Reserved" 15 "Req Str to RhSide in LhPerpend" 14 "Req Str to LhSide in RhPerpend" 13 "Req Stop in perpendicular park" 12 "Reserved" 11 "Reserved" 10 "DecSpace-Left parallel" 9 "DecSpace-Right parallel" 8 "DecSpace-Left Perpendicular" 7 "DecSpace-Right Perpendicular" 6 "Reserved" 5 "Reserved" 4 "ModeSel-Left parallel" 3 "ModeSel-Right parallel" 2 "ModeSel-Left perpendicular" 1 "ModeSel-Right perpendicular" 0 "No Display" ;
+VAL_TABLE_ CF_Spas_Stat 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "SPAS_Abort" 6 "SPAS_Failure" 5 "SPAS_Angle_Control_Active" 4 "SPAS_Active" 3 "SPAS_Standby" 2 "SPAS_NewStart" 1 "SPAS_Init" 0 "Reserved" ;
+VAL_TABLE_ CF_Ldws_FunStop 1 "LDWS stopped by Wiper High mode" 0 "LDWS operate at normal condition" ;
+VAL_TABLE_ CF_Ldws_RecXL 1 "Left/Right line recognized" 0 "Left/Right line unrecognized" ;
+VAL_TABLE_ CF_Ldws_SpdExceed 1 "Over threshold speed" 0 "Under threshold speed" ;
+VAL_TABLE_ CF_Ldws_HapWarning 1 "Operate haptic warning" 0 "No operation" ;
+VAL_TABLE_ CF_Ldws_XHWarning 3 "Reserved" 2 "Lane depart 2nd step warn engage" 1 "Lane depart 1st step warn engage" 0 "None Warning is generated" ;
+VAL_TABLE_ CF_Ldws_SysStat 7 "System Fail" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System On & Lane Unrecognized" 2 "System On & Lane Recognize" 1 "System On" 0 "System Ready" ;
+VAL_TABLE_ CF_VSM_ConfSwi 3 "Error Identifier" 2 "Reserved" 1 "Switch Pressed" 0 "Switch Not Pressed" ;
+VAL_TABLE_ CF_DriBkeStat 1 "Driver is braking" 0 "Driver is not braking / failure" ;
+VAL_TABLE_ CF_VSM_Handshake 1 "Okay" 0 "Not okay" ;
+VAL_TABLE_ CF_VSM_Avail 3 "Permanently not available" 2 "Temporarily not available" 1 "Available" 0 "Not available" ;
+VAL_TABLE_ CF_VSM_Coded 1 "Coded" 0 "Not coded" ;
+VAL_TABLE_ AVAILABLE_NOTAVAILABLE 1 "Signal is not available" 0 "Signal is available" ;
+VAL_TABLE_ VALID_INVALID 1 "Description for the value '0x1'" 0 "Valid" ;
+VAL_TABLE_ AVH_CLU 4 "AVH is on" 3 "AVH is on (not sectured / waits)" 2 "AVH is off (miss failsafe condi)" 1 "AVH is off (miss operate condi)" 0 "AVH is off" ;
+VAL_TABLE_ ECD_ACT 1 "ECD is active" 0 "ECD is not active" ;
+VAL_TABLE_ REQ_EPB_STAT 1 "REQ_EPB_ACT signal is invalid" 0 "REQ_EPB_ACT signal is valid" ;
+VAL_TABLE_ AVH_I_LAMP 3 "Reserved" 2 "Reserved" 1 "Lamp Off" 0 "Lamp On" ;
+VAL_TABLE_ REQ_EPB_ACT 3 "Close request in secure mode" 2 "Close request in comfort mode" 1 "Release request" 0 "No request" ;
+VAL_TABLE_ LDM_STAT 1 "ESC can't perform DBF/AVH" 0 "ESC ready to DBF/AVH" ;
+VAL_TABLE_ AVH_ALARM 2 "Uncomfortable tone" 1 "comfortable tone" 0 "No alarm" ;
+VAL_TABLE_ AVH_STAT 3 "Reserved" 2 "Being released" 1 "Vehicle is held by service brake" 0 "No apply" ;
+VAL_TABLE_ CF_Mdps_Stat 15 "Not Available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "MDPS Abort" 6 "MDPS Failure" 5 "MDPS Angle Control Active" 4 "MDPS Active" 3 "MDPS Standby" 2 "MDPS Newstart" 1 "MDPS Init" 0 "Reserved" ;
+VAL_TABLE_ CF_Mdps_WLmp 3 "MDPS Malfunction W/L BLK (Diag)" 2 "MDPS Malfunction W/L ON" 1 "Reserved" 0 "MDPS Malfunction W/L OFF" ;
+VAL_TABLE_ CF_Clu_AcnCltEnRq 1 "A/C clutch enable request" 0 "A/C clutch disable request" ;
+VAL_TABLE_ CF_Clu_AcnRqSwi 1 "A/C on request" 0 "A/C off request" ;
+VAL_TABLE_ CF_Clu_ActiveEcoSW 1 "Active ECO Switch is pressed" 0 "Active ECO Switch is not pressed" ;
+VAL_TABLE_ CF_SWL_Stat 7 "Lamp Circuit Failure" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "ACU Message Error" 2 "Lamp Flashing" 1 "Lamp On" 0 "Lamp OFF" ;
+VAL_TABLE_ CF_Clu_SwiGearR 3 "Invalid" 2 "Reserved" 1 "Gear R Switch On" 0 "Gear R Switch Off" ;
+VAL_TABLE_ CF_Clu_EcoDriveInf 7 "Error" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Red Lamp On" 2 "Yellow Lamp On" 1 "Green Lamp On" 0 "Not Activated" ;
+VAL_TABLE_ CF_Clu_HeadLampHigh 1 "Head Lamp High Beam On" 0 "Head Lamp High Beam Off" ;
+VAL_TABLE_ CF_Clu_HeadLampLow 1 "Head Lamp Low Beam On" 0 "Head Lamp Low Beam Off" ;
+VAL_TABLE_ CF_Clu_RainSnsStat 6 "Fault3" 5 "Fault2" 4 "Fault1" 3 "High" 2 "Low" 1 "Rain Detected" 0 "OFF" ;
+VAL_TABLE_ CF_Clu_WiperIntT 4 "Step5" 3 "Step4" 2 "Step3" 1 "Step2" 0 "Step1" ;
+VAL_TABLE_ CF_HoodStat 3 "Invalid" 2 "Reserved" 1 "Hood Open" 0 "Hood Close" ;
+VAL_TABLE_ PAS_Seat_Belt 3 "Invalid" 2 "Failed" 1 "Unbelted" 0 "Belted" ;
+VAL_TABLE_ TRUNK_OPEN_STATUS 3 "Invalid" 2 "Reserved" 1 "Trunk Open" 0 "Trunk Close" ;
+VAL_TABLE_ DRV_Seat_Belt 3 "Invalid" 2 "Failed" 1 "Unbelted" 0 "Belted" ;
+VAL_TABLE_ PIC_Unlock 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "PIC Key Reminder" 3 "Unlock" 2 "Unlock & No.2" 1 "Unlock & No.1" 0 "None" ;
+VAL_TABLE_ PIC_Lock 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Lock" 2 "Lock & No.2" 1 "Lock & No.1" 0 "None" ;
+VAL_TABLE_ DRV_Key_Unlock 1 "Driver door key unlock" 0 "Off" ;
+VAL_TABLE_ DRV_Key_Lock 1 "Driver door key lock" 0 "Off" ;
+VAL_TABLE_ DRV_DR_SW 3 "Invalid" 2 "Reserved" 1 "Open" 0 "Close" ;
+VAL_TABLE_ RKE_CMD 7 "Reserved" 6 "Unlock" 5 "Lock" 4 "Unlock & No.2" 3 "Lock & No.2" 2 "Unlock & No.1" 1 "Lock & No.1" 0 "None" ;
+VAL_TABLE_ IGN_SW 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Start" 3 "IGN" 2 "ACC" 1 "Key In" 0 "Key Off" ;
+VAL_TABLE_ CF_ButSys_VarInd 1 "PushStartOption" 0 "Non PushStartOption" ;
+VAL_TABLE_ CF_StrRly_Stat 1 "Starter relay output ON" 0 "Starter relay output OFF" ;
+VAL_TABLE_ VEHICLE_INFO 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "VI" 0 "BH" ;
+VAL_TABLE_ NOFAILURE_FAILURE 1 "Failure" 0 "No failure" ;
+VAL_TABLE_ P_Brake_ACT 1 "Parking brake is activated" 0 "Parking brake is not activated" ;
+VAL_TABLE_ SPEED_UNIT 1 "mph" 0 "km/h" ;
+VAL_TABLE_ CF_Clu_SldMainSW 1 "SLD main switch pressed" 0 "SLD main switch not pressed" ;
+VAL_TABLE_ CF_Blr_MaxStat 1 "Max blower speed is selected" 0 "Max blower speed is not selected" ;
+VAL_TABLE_ EPB_FAIL 7 "Reserved" 6 "Reserved" 5 "EPB Permanently Not Available" 4 "EPB Temporarily Not Available" 3 "EPB Diagnostic" 2 "EPB Initialization State" 1 "EPB No failure" 0 "Not valid" ;
+VAL_TABLE_ EPB_DBF_REQ 1 "Dynamic braking req" 0 "No Req" ;
+VAL_TABLE_ ESP_ACK 1 "Acknowledge for external ESC req" 0 "Idle / No acknowledge" ;
+VAL_TABLE_ EPB_FRC_ERR 3 "Force not measurable" 2 "Emergency release" 1 "Clamp position not reached" 0 "No failure" ;
+VAL_TABLE_ EPB_STATUS 5 "Dynamic braking via EPB" 4 "Releasing in progress" 3 "Clamping in progress" 2 "Clamped" 1 "Released" 0 "See - EPB_FRC_ERR" ;
+VAL_TABLE_ EPB_RBL 1 "Request to turn rear brk lights" 0 "No request" ;
+VAL_TABLE_ EPB_SWITCH 3 "Switch failure" 2 "Release position" 1 "Apply position" 0 "Neutral position" ;
+VAL_TABLE_ EPB_ALARM 3 "Uncomfortable tone + warn alarm" 2 "Uncomfortable tone (Dyn Brk)" 1 "Comfortable tone (Dirver inform)" 0 "Off (Normal)" ;
+VAL_TABLE_ EPB_F_LAMP 2 "Blk at 1Hz (EOL Conf not done)" 1 "ON (Failure or Diag Mode)" 0 "OFF" ;
+VAL_TABLE_ EPB_I_LAMP 15 "BLK 3HZ (Diagnostic session)" 14 "-" 13 "-" 12 "-" 11 "-" 10 "-" 9 "-" 8 "BLK 1HZ (Dyn Brk AVH)" 7 "-" 6 "-" 5 "-" 4 "ON (Apply Stat AVH)" 3 "-" 2 "BLK 1HZ (Dyn Brk/Driver Act Req)" 1 "ON (Apply State EPB)" 0 "OFF (Release State)" ;
+VAL_TABLE_ CF_VSM_ConfMode 7 "Error identifier" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "APIA/VSM2 On, Pre-Warn" 2 "APIA/VSM2 On, normal Pre-Warn" 1 "APIA/VSM2 OFF, Only PSB Act On" 0 "Reserved" ;
+VAL_TABLE_ CF_VSM_BeltCmd 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Haptic warning" 1 "Pre-crash full retraction" 0 "Release / No alert" ;
+VAL_TABLE_ CF_VSM_Stat 3 "Permanently not available" 2 "Temporarily not available" 1 "Available" 0 "Not applicable" ;
+VAL_TABLE_ CF_VSM_Warn 3 "Warning level 3" 2 "Warning level 2" 1 "Warning level 1" 0 "No warning" ;
+VAL_TABLE_ CF_VSM_HBACmd 3 "Lowered threshold 3" 2 "Lowered threshold 2" 1 "Lowered threshold 1" 0 "Standard threshold" ;
+VAL_TABLE_ NOREQ_REQ 1 "Request Valid" 0 "No request" ;
+VAL_TABLE_ CF_VSM_Prefill 1 "Pre-fill" 0 "No pre-fill" ;
+VAL_TABLE_ ACC_ObjStatus 3 "SCC Pre-Safe I/F inactive" 2 "Reserved" 1 "SCC Object detected" 0 "No SCC object detected" ;
+VAL_TABLE_ TauGapSet 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "4th level distance" 3 "3rd level distance" 2 "2nd level distance" 1 "1st level distance" 0 "No time gap set" ;
+VAL_TABLE_ SCCInfoDisplay 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Available resume accel control" 3 "Obj disappered low speed" 2 "Conventional Cruis Mode" 1 "SCC Mode" 0 "-" ;
+VAL_TABLE_ StopReq 1 "Stop control is required" 0 "No Request" ;
+VAL_TABLE_ OFF_ON 1 "ON" 0 "OFF" ;
+VAL_TABLE_ LV_LPG_SW_DRIVER_REQ 1 "LPG Switch Pressed" 0 "LPG Switch Not Pressed" ;
+VAL_TABLE_ CF_Tcu_ShfPatt 15 "None of the above" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Cruise Uphill 2" 6 "Cruise Uphill 1" 5 "Cruise" 4 "Downhill 1" 3 "Reserved" 2 "Uphill 2" 1 "Uphill 1" 0 "Normal" ;
+VAL_TABLE_ CF_Tcu_NCStat 3 "NC Exit" 2 "NC Applied" 1 "NC Entry" 0 "No NC" ;
+VAL_TABLE_ CF_Tcu_BkeOnReq 1 "Brake On Request" 0 "No request" ;
+VAL_TABLE_ CF_Tcu_InhCda 1 "TCU prohibits CDA transition" 0 "CDA transition is available" ;
+VAL_TABLE_ N_INC_TCU 1 "Engine speed increase is req" 0 "No request" ;
+VAL_TABLE_ IDLE_UP_TCU 1 "IDLE UP request" 0 "No IDLE UP request" ;
+VAL_TABLE_ INH_FUEL_CUT 1 "Fuel cut inhibit reqt from TCU" 0 "No request" ;
+VAL_TABLE_ FUEL_CUT_TCU 1 "Fuel cut request from TCU" 0 "No request" ;
+VAL_TABLE_ CUR_GR 15 "Reserved" 14 "Reserved speed" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "8th speed" 7 "7th speed" 6 "6th speed" 5 "5th speed" 4 "4th speed" 3 "3rd speed" 2 "2nd speed" 1 "1st speed" 0 "if N or P are detected" ;
+VAL_TABLE_ CF_Ems_FCopen 1 "Fuel Cap is opend" 0 "Fuel Cap is not opend" ;
+VAL_TABLE_ CF_Ems_HPresStat 1 "Fuel Tank is in high Pressure" 0 "Fuel Tank is not high Pressure" ;
+VAL_TABLE_ CF_Ems_SldPosAct 1 "Positive action is active" 0 "Positive action is not active" ;
+VAL_TABLE_ CF_Ems_SldAct 1 "Speed limiter is active" 0 "Speed limiter is not active" ;
+VAL_TABLE_ CF_Ems_DesCurGr 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Gear Position 6 display" 5 "Gear Position 5 display" 4 "Gear Position 4 display" 3 "Gear Position 3 display" 2 "Gear Position 2 display" 1 "Gear Position 1 display" 0 "No display" ;
+VAL_TABLE_ CF_Ems_XXXXTarGr 1 "Gear Shift(Up/Down) Display On" 0 "Gear Shift(Up/Down) Display Off" ;
+VAL_TABLE_ CF_Ems_EtcLimpMod 1 "ETC Limphome mode by ECU" 0 "Engine control is available" ;
+VAL_TABLE_ CF_Ems_OilChg 1 "OIL LEVEL LAMP ON" 0 "OIL LEVEL LAMP OFF" ;
+VAL_TABLE_ CF_Ems_lsgStat 4 "Fault is existing in ISG" 3 "ISG is prohibited" 2 "Automatically stated by ECU " 1 "Idle Stop is activated" 0 "ISG is not operating" ;
+VAL_TABLE_ CF_CdaStat 7 "Fault in CDA operation" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "CDA ON" 1 "Preparation for CDA operation" 0 "CDA OFF" ;
+VAL_TABLE_ CF_Ems_SwiOfflCX 1 "Switch Off" 0 "Switch On" ;
+VAL_TABLE_ CF_Ems_DiagFulHDEV 1 "Condition fulfilled" 0 "Condition not fulfilled" ;
+VAL_TABLE_ CF_Ems_AclAct 3 "Accel pedal position sensor fail" 2 "Reserved" 1 "Accelerator pedal pressed" 0 "Accelerator pedal not pressed" ;
+VAL_TABLE_ WHL_DIR_XX 3 "Error identifier" 2 "Backward direction" 1 "Forward dirction" 0 "Unknown" ;
+VAL_TABLE_ ESS_STAT 3 "Reserved" 2 "ESS system is defective" 1 "ESS control active" 0 "ESS control inactive" ;
+VAL_TABLE_ POS_RL_W_LAMP 1 "RL Position Warning Lamp ON" 0 "RL Position Warning Lamp OFF" ;
+VAL_TABLE_ POS_RR_W_LAMP 1 "RR Position Warning Lamp ON" 0 "RR Position Warning Lamp OFF" ;
+VAL_TABLE_ POS_FR_W_LAMP 1 "FR Position Warning Lamp ON" 0 "FR Position Warning Lamp OFF" ;
+VAL_TABLE_ POS_FL_W_LAMP 1 "FL Position Warning Lamp ON" 0 "FL Position Warning Lamp OFF" ;
+VAL_TABLE_ TREAD_W_LAMP 3 "RESERVED" 2 "TREAD Warning Lamp BLINKING" 1 "TREAD Warning Lamp ON" 0 "TREAD Warning Lamp OFF" ;
+VAL_TABLE_ TPMS_W_LAMP 3 "Reserved" 2 "TPMS malfunction warning lamp BL" 1 "TPMS malfunction warning lamp ON" 0 "TPMS malfunction warning lamp OF" ;
+VAL_TABLE_ REQ_RESPONSE 1 "Response required" 0 "No response required" ;
+VAL_TABLE_ GPCM_ERROR 15 "N/A" 14 "Signal Error" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Error present in glow system" 0 "No error present in glow system" ;
+VAL_TABLE_ GPCM_CTRL 15 "N/A" 14 "Signal Error" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Default glowing" 1 "Engine start glow on" 0 "Glow off – No glow plug is glowi" ;
+VAL_TABLE_ GPC_SW_COND 3 "N/A" 2 "Signal Error" 1 "Fault Active" 0 "No fault" ;
+VAL_TABLE_ GPC_SW_OPEN 3 "N/A" 2 "Signal Error" 1 "Fault Active" 0 "No fault" ;
+VAL_TABLE_ GPC_TO_STAT 3 "N/A" 2 "Signal Error" 1 "Fault Active" 0 "No fault" ;
+VAL_TABLE_ GPC_OV_STAT 3 "N/A" 2 "Signal Error" 1 "Fault Active" 0 "No fault" ;
+VAL_TABLE_ GPC_UV_STAT 3 "N/A" 2 "Signal Error" 1 "Fault Active" 0 "No fault" ;
+VAL_TABLE_ GPC_OT_STAT 3 "N/A" 2 "Signal Error" 1 "Fault Active" 0 "No fault" ;
+VAL_TABLE_ GPC_STAT6 15 "N/A" 14 "Error detected" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Short circuit" 1 "Line Open" 0 "Normal condition" ;
+VAL_TABLE_ GPC_STAT5 15 "N/A" 14 "Error detected" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Short circuit" 1 "Line Open" 0 "Normal condition" ;
+VAL_TABLE_ GPC_STAT4 15 "N/A" 14 "Error detected" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Short circuit" 1 "Line Open" 0 "Normal condition" ;
+VAL_TABLE_ GPC_STAT3 15 "N/A" 14 "Error detected" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Short circuit" 1 "Line Open" 0 "Normal condition" ;
+VAL_TABLE_ GPC_STAT2 15 "N/A" 14 "Error detected" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Short circuit" 1 "Line Open" 0 "Normal condition" ;
+VAL_TABLE_ GPC_STAT1 15 "N/A" 14 "Error detected" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Short circuit" 1 "Line Open" 0 "Normal condition" ;
+VAL_TABLE_ AFLS_DEF 3 "AFLS is defective" 2 "Reserved" 1 "Reserved" 0 "AFLS is in normal condition" ;
+VAL_TABLE_ AFLS_ON 1 "All functions of AFLS are in act" 0 "AFLS disabled by user" ;
+VAL_TABLE_ DISFail 1 "Failure" 0 "No failure" ;
+VAL_TABLE_ DashACCFail 1 "Failure" 0 "No failure" ;
+VAL_TABLE_ ACCEnableSwitch 1 "Enable ACC" 0 "Disable ACC" ;
+VAL_TABLE_ SPEED_UNIT 1 "[MPH]" 0 "[km/h]" ;
+VAL_TABLE_ TauGapProg 3 "Long distance" 2 "Middle distance" 1 "Short distance" 0 "No time gap set" ;
+VAL_TABLE_ OperationCodeACC 15 "Failure in Control Switches" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "ACC Off" 3 "Resume" 2 "Set Minus" 1 "Set Plus" 0 "Idle Position" ;
+VAL_TABLE_ Prefill 1 "Pre-filling of the brake system " 0 "No pre-filling of the brake syst" ;
+VAL_TABLE_ TauGapSet 3 "Long distance" 2 "Middle distance" 1 "Short distance" 0 "No time gap set" ;
+VAL_TABLE_ TakeOverReq 1 "Takeover request" 0 "No takeover request" ;
+VAL_TABLE_ ObjValid 1 "In-path object detected" 0 "No in-path object detected" ;
+VAL_TABLE_ ACCMode 3 "Shutoff" 2 "Override" 1 "Engaged" 0 "Off" ;
+VAL_TABLE_ ACCFailInfo 3 "ACC Service Required" 2 "System temporairy unavailable" 1 "Performance degredation" 0 "System without error" ;
+VAL_TABLE_ LV_CONF_INJECTION_DELAY 1 "Active" 0 "Not Active" ;
+VAL_TABLE_ LV_PRE_CDN_LEAK 1 "Active" 0 "Not Active" ;
+VAL_TABLE_ LV_FUP_ENA_THD 1 "The pressure is enough high to s" 0 "The pressure is too low to start" ;
+VAL_TABLE_ LV_GAS_OK 1 "Gas system is OK" 0 "Gas system is not OK" ;
+VAL_TABLE_ LV_BFS_IN_PROGRESS 1 "Progress" 0 "No progress" ;
+VAL_TABLE_ LV_FUEL_TYPE_BOX 1 "Gas" 0 "Gasoline" ;
+VAL_TABLE_ LOCK_ACT 1 "LOCK mode is activated" 0 "LOCK mode is inactive" ;
+VAL_TABLE_ AUTO_ACT 1 "AUTO mode is activated" 0 "AUTO mode is inactive" ;
+VAL_TABLE_ LOW_ACT 1 "LOW mode is activated" 0 "LOW mode is inactive" ;
+VAL_TABLE_ _4H_ACT 1 "4H mode is activated" 0 "4H mode is inactive" ;
+VAL_TABLE_ _2H_ACT 1 "2H mode is activated" 0 "2H mode is inactive" ;
+VAL_TABLE_ _4WD_SUPPORT 3 "Support of steering angle value" 2 "Not support of steering angle va" 1 "Support of 4WD MAX. cardan shaft" 0 "Not support of 4WD MAX. cardan s" ;
+VAL_TABLE_ _4WD_TYPE 3 "Electric shift 4WD (FR)" 2 "Electronic 4WD (FR)" 1 "Electronic 4WD (FF)" 0 "Reserved" ;
+VAL_TABLE_ BRAKE_ACT_TCU 3 "Brake switch failure" 2 "Brake switch is pressed" 1 "Brake switch is not pressed" 0 "TMS does not support this functi" ;
+VAL_TABLE_ FAN_CTRL_TCU 3 "High-Speed Control" 2 "Mid-Speed Control" 1 "Low-Speed Control" 0 "Fan control is not needed" ;
+VAL_TABLE_ Gear_Type 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "6 – Speed A/T" 5 "5 – Speed A/T" 4 "4 – Speed A/T" 3 "3 – Speed A/T" 2 "Reserved" 1 "Reserved" 0 "Reserved" ;
+VAL_TABLE_ TCU_TYPE 3 "Reserved" 2 "CVT" 1 "Step A/T" 0 "Reserved" ;
+VAL_TABLE_ F_TCU 3 "Not used" 2 "Diagnostic failure in TCU, limp " 1 "Diagnostic failure in TCU" 0 "No failure" ;
+VAL_TABLE_ G_SEL_DISP 15 "Fault" 14 "Not used" 13 "Not used" 12 "Not used" 11 "Not used" 10 "Not used" 9 "Not used" 8 "Sports mode / manual shift" 7 "R" 6 "N" 5 "D" 4 "Not used" 3 "3" 2 "2" 1 "L" 0 "P" ;
+VAL_TABLE_ SWI_CC 3 "Off slip lock up" 2 "Fully lock up" 1 "Slip lock up" 0 "No lock up control" ;
+VAL_TABLE_ TCU_STAT 1 "Actuator test in process" 0 "Normal" ;
+VAL_TABLE_ F_OBD 1 "OBD error present" 0 "No error present" ;
+VAL_TABLE_ SWI_GS 1 "Gear change is active" 0 "No gear change" ;
+VAL_TABLE_ TAR_GC 7 "Reverse speed" 6 "6th speed" 5 "5th speed" 4 "4th speed" 3 "3rd speed" 2 "2nd speed" 1 "1st speed" 0 "if N or P are detected" ;
+VAL_TABLE_ SOAK_TIME_ERROR 1 "Failure detected" 0 "No failure detected" ;
+VAL_TABLE_ CRUISE_LAMP_S 1 "Cruise SET switch indication lam" 0 "Cruise SET switch indication lam" ;
+VAL_TABLE_ CRUISE_LAMP_M 1 "Cruise MAIN switch indication la" 0 "Cruise MAIN switch indication la" ;
+VAL_TABLE_ INH_DC_OBD 1 "Inhibition of standardized vehic" 0 "Enable of standardized vehicle o" ;
+VAL_TABLE_ BLECFail 1 "Failure detected" 0 "No failure detected" ;
+VAL_TABLE_ SwitchOffCondExt 1 "Switch off condition detected" 0 "No switch off condition detected" ;
+VAL_TABLE_ ECFail 1 "Failure detected" 0 "No Failure detected" ;
+VAL_TABLE_ QECACC 1 "Failure detected" 0 "No Failure detected" ;
+VAL_TABLE_ ECGPOvrd 1 "Driver Override" 0 "No Driver Override" ;
+VAL_TABLE_ IM_STAT 1 "Immobilizer passive" 0 "Immobilizer active" ;
+VAL_TABLE_ S_CHKENG 1 "Check Engine lamp ON" 0 "Check Engine lamp OFF" ;
+VAL_TABLE_ LV_VB_OFF_ACT2 1 "Activation" 0 "Deactivation" ;
+VAL_TABLE_ LV_GSL_MAP 1 "MAP signal send" 0 "AMP signal send" ;
+VAL_TABLE_ LV_VB_OFF_ACT 1 "Activation" 0 "Deactivation" ;
+VAL_TABLE_ LV_CRASH 1 "Activation" 0 "Deactivation" ;
+VAL_TABLE_ LV_BFS_CFIRM 1 "Confirmed" 0 "Not Confirmed" ;
+VAL_TABLE_ LV_FUEL_TYPE_ECU 1 "Gas" 0 "Gasoline" ;
+VAL_TABLE_ GP_CTL 3 "Reserved" 2 "System Error" 1 "Glow plug on request" 0 "Glow plug off request" ;
+VAL_TABLE_ ENG_CHR 7 "Reserved - Not Used" 6 "Reserved - Not Used" 5 "Fuel – Diesel, ETC – Applied" 4 "Fuel – LPI(LPG), ETC – Applied" 3 "Fuel – Gasoline, ETC – Applied" 2 "Fuel – Diesel, ETC - No" 1 "Fuel – LPI(LPG), ETC – No" 0 "Fuel – Gasoline, ETC – No" ;
+VAL_TABLE_ BRAKE_ACT 3 "Brake switch failure" 2 "Brake switch is pressed (ON)" 1 "Brake switch is not pressed (OFF" 0 "EMS does not support this functi" ;
+VAL_TABLE_ CLU_ACK 1 "Clutch is operating" 0 "Clutch is not operating" ;
+VAL_TABLE_ ACC_ACT 1 "Auto cruise control is active" 0 "Auto cruise control is not activ" ;
+VAL_TABLE_ OD_OFF_REQ 1 "Over drive off request to TCU by" 0 "Normal operation" ;
+VAL_TABLE_ CONF_MIL_FMY 4 "MIL Treatment E-OBD" 3 "MIL Treatment OBD-II CARB_COMP_O" 2 "MIL Treatment OBD-II" 1 "MIL Treatment OBD-I" 0 "No MIL" ;
+VAL_TABLE_ ACK_ES 1 "Acknowledgement 'engine stopped'" 0 "No acknowledgement" ;
+VAL_TABLE_ VB_OFF_ACT 1 "Battery disconnection detected a" 0 "No battery disconnection detecte" ;
+VAL_TABLE_ MUL_CODE 3 "TQ_STND" 2 "OBD_FRF_ACK" 1 "CONF_TCU" 0 "CAN_VERS" ;
+VAL_TABLE_ RLY_AC 1 "Air conditioner compressor relay" 0 "Air conditioner compressor relay" ;
+VAL_TABLE_ TQ_COR_STAT 3 "Due to a failure detected by a d" 2 "The torque reduction regarding t" 1 "Torque steps" 0 "Default value" ;
+VAL_TABLE_ PUC_STAT 1 "Engine in fuel cut off" 0 "Engine not in fuel cut off" ;
+VAL_TABLE_ ACK_TCS 1 "TCS message received, and no pla" 0 "TCS message not received within " ;
+VAL_TABLE_ SWI_IGK 1 "KEY ON" 0 "KEY OFF" ;
+VAL_TABLE_ ABS_DIAG2 1 "ABS is diagnostic mode" 0 "ABS is not diagnostic mode" ;
+VAL_TABLE_ EBD_W_LAMP2 1 "EBD Warning lamp ON" 0 "EBD Warning lamp OFF" ;
+VAL_TABLE_ ABS_W_LAMP2 1 "ABS Warning lamp ON" 0 "ABS Warning lamp OFF" ;
+VAL_TABLE_ ABS_ACT2 1 "ABS control active" 0 "ABS control inactive" ;
+VAL_TABLE_ EBD_DEF2 1 "EBD is defective" 0 "EBD is not defective" ;
+VAL_TABLE_ ABS_DEF2 1 "ABS is defective" 0 "ABS is not defective" ;
+VAL_TABLE_ TCS_F_LAMP 3 "Reserved" 2 "TCS/ESP Function lamp BLINKING(2" 1 "TCS/ESP Function lamp ON" 0 "TCS/ESP Function lamp OFF" ;
+VAL_TABLE_ TCS_W_LAMP 1 "TCS/ESP Warning lamp ON" 0 "TCS/ESP Warning lamp OFF" ;
+VAL_TABLE_ EBD_W_LAMP 1 "EBD Warning lamp ON" 0 "EBD Warning lamp OFF" ;
+VAL_TABLE_ ABS_W_LAMP 1 "ABS Warning lamp ON" 0 "ABS Warning lamp OFF" ;
+VAL_TABLE_ _4WD_LIM_MODE 1 "Minimum limitation mode" 0 "Maximum limitation mode" ;
+VAL_TABLE_ _4WD_LIM_REQ 1 "Request duty limit from ESP" 0 "No request from ESP" ;
+VAL_TABLE_ _4WD_OPEN 3 "Error" 2 "Torque limit" 1 "Clutch off" 0 "Passive" ;
+VAL_TABLE_ DriverBraking 1 "Brake pedal pressed" 0 "Brake pedal not pressed" ;
+VAL_TABLE_ PBRAKE_ACT 1 "Parking brake is activated" 0 "Parking brake is not activated" ;
+VAL_TABLE_ StandStill 1 "Stand still detected" 0 "No stand still detected" ;
+VAL_TABLE_ DriverOverride 3 "Not defined" 2 "Override by deceleration" 1 "Override by acceleration pedal" 0 "No override" ;
+VAL_TABLE_ ACCEnable 3 "ACC disabled irreversible due to" 2 "ACC disabled irreversible" 1 "ACC disabled reversible" 0 "ACC enabled" ;
+VAL_TABLE_ ACC_REQ 2 "Enable ACC torque request" 0 "No request" ;
+VAL_TABLE_ ACCReqLim 3 "Deceleration Limited" 2 "Acceleration Limited" 1 "Limited No Limitation" 0 "No Request" ;
+VAL_TABLE_ MaxGear 7 "7th Gear" 6 "6th Gear" 5 "5th Gear" 4 "4th Gear" 3 "3rd Gear" 2 "2nd Gear" 1 "1st Gear" 0 "No request" ;
+VAL_TABLE_ MinGear 7 "7th Gear" 6 "6th Gear" 5 "5th Gear" 4 "4th Gear" 3 "3rd Gear" 2 "2nd Gear" 1 "1st Gear" 0 "No request" ;
+VAL_TABLE_ DCEnable 1 "Enable deceleration control" 0 "Disable deceleration control" ;
+VAL_TABLE_ BrakeLight 1 "Activate brake lights" 0 "No request" ;
+VAL_TABLE_ SA_Z_FLAG 1 "Zero point detection" 0 "No zero point detection" ;
+VAL_TABLE_ MSR_C_REQ 1 "MSR control active" 0 "Passive or TCS function" ;
+VAL_TABLE_ TCS_REQ 1 "TCS/ESP control active" 0 "Passive" ;
+VAL_TABLE_ ABS_DIAG 1 "ABS/TCS/ESP is diagnostic mode" 0 "ABS/TCS/ESP is not diagnostic mo" ;
+VAL_TABLE_ TCS_MFRN 1 "Using TQI_TCS only" 0 "Using both TQI_TCS and TQI_SLW_T" ;
+VAL_TABLE_ TCS_GSC 1 "Active" 0 "Passive" ;
+VAL_TABLE_ EBD_DEF 1 "EBD is defective" 0 "EBD is not defective" ;
+VAL_TABLE_ ABS_DEF 1 "ABS is defective" 0 "ABS is not defective" ;
+VAL_TABLE_ ABS_ACT 1 "ABS control active" 0 "ABS control inactive" ;
+VAL_TABLE_ ESP_PAS 3 "ESP is defective (failed)" 2 "ESP disabled by user (SW off)" 1 "ESP active" 0 "ESP lamp OFF" ;
+VAL_TABLE_ TCS_PAS 3 "TCS is defective (failed)" 2 "TCS is disabled by user" 1 "TCS Active" 0 "TCS lamp OFF" ;
+
+
+BO_ 1472 Addition: 8 Vector__XXX
+ SG_ CalculationTime : 0|32@1+ (0.0001,0) [0|0] "sec" Vector__XXX
+
+BO_ 1460 PrdSpd_13_15_MeasuredSpd: 8 Vector__XXX
+ SG_ MeasuredSpd : 48|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_15 : 32|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_14 : 16|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_13 : 0|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+
+BO_ 1459 PrdSpd_09_12: 8 Vector__XXX
+ SG_ Prd_VehSpd_RNN_12 : 48|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_11 : 32|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_10 : 16|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_09 : 0|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+
+BO_ 1458 PrdSpd_05_08: 8 Vector__XXX
+ SG_ Prd_VehSpd_RNN_08 : 48|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_07 : 32|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_06 : 16|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_05 : 0|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+
+BO_ 1457 PrdSpd_01_04: 8 Vector__XXX
+ SG_ Prd_VehSpd_RNN_04 : 48|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_03 : 32|16@1+ (0.03125,0) [0|2047.96875] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_02 : 16|16@1+ (0.03125,0) [0|0] "km/h" Vector__XXX
+ SG_ Prd_VehSpd_RNN_01 : 0|16@1+ (0.03125,0) [0|0] "km/h" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+
