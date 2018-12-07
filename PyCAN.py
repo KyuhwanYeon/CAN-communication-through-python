@@ -23,7 +23,7 @@ ID3 = 0x5B3
 ID4 = 0x5B4
 ID5 = 0x5C0
 WhlSpdID = 0x386
-# Set can interfase, using the vector, CANoe 
+# Set can interface, using the vector, CANoe 
 bus1 = can.interface.Bus(bustype='vector', app_name='CANoe', can_filters=[{"can_id": ID1, "can_mask": 0xFFF, "extended": False}], channel=0, bitrate=500000, rx_queue_size=10000, receive_own_messages=False)
 bus2 = can.interface.Bus(bustype='vector', app_name='CANoe', can_filters=[{"can_id": ID2, "can_mask": 0xFFF, "extended": False}], channel=0, bitrate=500000, rx_queue_size=10000, receive_own_messages=False)
 bus3 = can.interface.Bus(bustype='vector', app_name='CANoe', can_filters=[{"can_id": ID3, "can_mask": 0xFFF, "extended": False}], channel=0, bitrate=500000, rx_queue_size=10000, receive_own_messages=False)
